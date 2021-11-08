@@ -6,13 +6,15 @@
 
 //Variables for inputs
 
-let name;
-let yearOfBirth;
-let mood;
+let name = "a";
+let yearOfBirth = 0;
+let mood = 0;
 
 //Animal Array
 
 const animalArray = ["Rat","Ox","Tiger","Rabbit","Dragon","Snake","Horse","Sheep","Monkey","Rooster","Dog","Pig"];
+
+//console.log(animalArray);
 
 //Animal Years Array
 
@@ -28,3 +30,13 @@ const monkeyYearArr =  [1932, 1944, 1956, 1968, 1980, 1992, 2004, 2016, 2028]
 const roosterYearArr = [1933, 1945, 1957, 1969, 1981, 1993, 2005, 2017, 2029]
 const dogYearArr = [1934, 1946, 1958, 1970, 1982, 1994, 2006, 2018, 2030]
 const pigYearArr = [1935, 1947, 1959, 1971, 1983, 1995, 2007, 2019, 2031]
+
+//console.log(tigerYearArr);
+
+//Message Logic
+//function will determine the matching animal with the year
+//number -> string
+
+function myAnimal(yearOfBirth) {
+
+}
