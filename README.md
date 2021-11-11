@@ -3,7 +3,7 @@ Mixed Messages Read Me
 
 # Overview
 
-Mixed Messages is a portfolio project from Codacademy's course. This application generates a message based on the user input of birth month, year and mental mood. 
+Mixed Messages is a portfolio project from Codacademy's course. This application generates a message based on the user input of birth year, day and day. 
 
 Open the .html file in your web browser and enjoy!
 
@@ -18,7 +18,7 @@ Open the .html file in your web browser and enjoy!
 ## General info
 A star sign reason generator application that produce a new message based on reason at least three different pieces of data. This is part of a portfolio project from on [Codecademy](https://www.codecademy.com) Full-Stack and Back-End Developer course. 
 
-The application is designed and written using HTML, JavaScript.
+The application is designed and written using HTML & JavaScript.
 
 ##  Project-Objectives
 ###  Building a mixed message project using:
@@ -31,15 +31,18 @@ The application is designed and written using HTML, JavaScript.
 #### Prerequisites:
 
   *  JavaScript
+  *  jQuery, Moment.js and Date Range Picker's library
   *  Git version control and Github
   *  Command line
 
 ## How-to-Use-this-Program:
   1. Download the HTML file from this GitHub repositary 
   2. Open the file
-  3. Choose your birth month and year
+  3. Pick your birth year, month and year
+  4. Hit Apply
+  5. Click on button
 
 ## Development-Status
- * Current Stage: JavaScript logic 
- * Upcoming: HTML front-end
+ * Stage 1: JavaScript logic 
+ * Current: HTML front-end
  
