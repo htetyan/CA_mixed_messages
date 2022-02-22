@@ -36,12 +36,15 @@ include jQuery, Moment.js and Date Range Picker's files
 Click on the above button to find your Chinese Zodiac Animal & Star Sign!
 </h3>
 <!-- JavaScript: date logic file and writing 'result'-->
-<script type="text/javascript" src="script.js"></script>
-<script>
+<script type="module" src="./message.js">
+</script>
+<script type="module">
 let resEle = document.querySelector(".result");
 
 document.querySelector(".Btn").addEventListener("click", () => {
-  resEle.innerHTML = randMessage();
+    resEle.innerHTML = function() { 
+    alert('hello!');
+  };
  });
 </script>
 </body>
