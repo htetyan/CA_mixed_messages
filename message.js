@@ -45,5 +45,15 @@ function myMessage() {
     console.log(`At the time of your birth in ${randmonth} ${yearPicked}, approximately ${2022 - yearPicked} years ago. The occurrence of this very spectacular event, caused you to be a ${animalMsg}. At the same time, the Sun was inside of the constellation of ${constellationMsg}!!`);
 
     return `At the time of your birth in ${randmonth} ${yearPicked}, approximately ${2022 - yearPicked} years ago. The occurrence of this very spectacular event, caused you to be a ${animalMsg}. At the same time, the Sun was inside of the constellation of ${constellationMsg}!!`
-    };
+};
 
+//Console-logging the message
+myMessage();
+
+//Manipulating the DOM element to write the message
+let resEle = document.getElementById("result");
+
+document.getElementById("Btn")
+    .addEventListener("click", () => {
+        resEle.innerHTML = myMessage();
+    });
