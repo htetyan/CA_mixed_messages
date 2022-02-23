@@ -3,7 +3,7 @@ Mixed Messages Read Me
 
 # Overview
 
-Mixed Messages is a portfolio project from Codacademy's course. This application generates a message based on the user input of birth year, day and day. 
+Mixed Messages is a portfolio project from Codecademy's course. This application generates a message based on the user input of birth year, day and day. 
 
 It will inform the users their Chinese Zodiac Animal (based on the converted Chinese Lunar year) and Astrology Star Sign.
 
