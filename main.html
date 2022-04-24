@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Find your Chinese Zodiac Animal</title>
+            <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .result {
+                font-size: 16px;
+                font-weight: 100px;
+            }
+            </style>
+        <!-- Plugins:
+        include jQuery, Moment.js and Date Range Picker's files
+        -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    </head>
+    <body>
+        <header>
+            <img class="hero-img" src="#">
+            <h1>Find your Chinese Zodiac Animal & Star Sign</h1>
+        </header>
+        <div class="cal-container">
+            <p>To see the reasons for your Chinese Zodiac & Star Sign, please choose your date of birth:
+            </p>
+            <input type="text" name="birthday" value="10/24/1996" />
+            <button id="Btn">
+                Show me below
+            </button>
+        </div>
+        <div class="result-container">
+            <h3>Click on the above button to find your Chinese Zodiac Animal & Star Sign!</h3>
+            <div class="result" style="color: green;" id="result"></div>
+        </div>
+        <footer></footer>
+    <!-- JavaScript: date logic file and writing 'result'-->
+    <script type="module" src="./message.js" async>
+    </script>
+    </body>
+</html>
