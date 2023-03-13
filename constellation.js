@@ -108,3 +108,5 @@ export const constellationCal = (monthPicked, dayPicked) => {
     };
     return myConstellation;
 }
+
+console.log(constellationCal(10, 1));

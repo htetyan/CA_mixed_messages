@@ -49,36 +49,39 @@ function myLog(event) {
 
   //Output of chosen year and month picked
   yearPicked = Number(yearSelect.value);
-  monthPicked = Number(monthSelect.value);
+  monthPicked = String(monthSelect.value);
   dayPicked = Number(daySelect.value);
 
   console.log(yearSelect.value);
   console.log(monthSelect.value);
   console.log(daySelect.value);
 
-  console.log(myMessage());
+  //console.log(myMessage());
   return `${yearSelect.value}, ${monthSelect.value}, ${daySelect.value}`;
 }
 
 //My messages
 
+console.log(monthPicked)
+console.log(dayPicked);
+
 function myMessage() {
   let animalMsg = myAnimal(lunarConvert(yearPicked, monthPicked, dayPicked));
 
-  let randmonth = ranMonths.filter(
-    (month) => month === ranMonths[monthPicked - 1]
-  );
+  let monthNum = ranMonths.indexOf(monthPicked) + 1;
 
-  let constellationMsg = constellationCal(monthPicked, dayPicked);
+  console.log(monthNum);
+
+  let constellationMsg = constellationCal(monthNum, dayPicked);
 
   console.log(
-    `At the time of your birth in ${randmonth} ${yearPicked}, approximately ${
-      2022 - yearPicked
+    `At the time of your birth in ${monthPicked}, ${yearPicked}, approximately ${
+      2023 - yearPicked
     } years ago. The occurrence of this very spectacular event, caused you to be a ${animalMsg}. At the same time, the Sun was inside of the constellation of ${constellationMsg}!!`
   );
 
-  return `At the time of your birth in ${randmonth} ${yearPicked}, approximately ${
-    2022 - yearPicked
+  return `At the time of your birth in ${monthPicked}, ${yearPicked}, approximately ${
+    2023 - yearPicked
   } years ago. The occurrence of this very spectacular event, caused you to be a ${animalMsg}. At the same time, the Sun was inside of the constellation of ${constellationMsg}!!`;
 }
 

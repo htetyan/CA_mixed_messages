@@ -1,5 +1,10 @@
 # Mixed Messages Read Me
 
+## Recent Updates
+
+2023/3/13 - Came back to this tool to add some UI and found that the message output wasn't working. Had to fix a that function that was supposed to convert the month string to a number. This caused the constellation message to not show up correctly.
+Also had to brush up on some of the code base as it's been a while since this was created.
+
 # Overview
 
 Mixed Messages is a portfolio project from Codecademy's course. This application generates a message based on the user input of birth year, day and day.
