@@ -66,7 +66,7 @@ let LunarDate = {
    return tmp;
  },
  GetLunarDay: function(solarYear, solarMonth, solarDay) {
-   if (solarYear < 1921 || solarYear > 2020) {
+   if (solarYear < 1900 || solarYear > 2099) {
      return "";
    } else {
      solarMonth = (parseInt(solarMonth) > 0) ? (solarMonth - 1) : 11;

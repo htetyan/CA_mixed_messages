@@ -2,6 +2,13 @@
 
 ## Recent Updates
 
+2023/5/10 - Used all the dates in the LunarDate object Calendar array, update the picker to have years 1900 to 2099. Updated the animals years and selecting the current year as the 'selected' date on the picker. Minor CSS styling.
+Details: 
+- YearMonths.js, updated the animalYears array to include years from 1900 ~ 2099
+- datePicker.js, update the selection years from 2099 to 1900 and selecting the current year in the html element.
+- lunar.js, GetLunarDay function changed to have the full array of years from 1900 - 2100 that are in the Calendar array
+- main.html, minor styling for the select elements
+
 2023/3/13 - Came back to this tool to add some UI and found that the message output wasn't working. Had to fix a that function that was supposed to convert the month string to a number. This caused the constellation message to not show up correctly.
 Also had to brush up on some of the code base as it's been a while since this was created.
 

@@ -77,15 +77,20 @@ function populateDays(month) {
 
 function populateYears() {
   // get this year as a number
-  var date = new Date(2019, 11, 31);
+  var date = new Date();
   var year = date.getFullYear();
 
   // Make this year, and the 100 years before it available in the year <select>
-  for (var i = 0; i <= 100; i++) {
+  for (var i = 0; i <= 199; i++) {
     var option = document.createElement("option");
-    option.textContent = year - i;
+    option.textContent = 2099 - i;
     yearSelect.appendChild(option);
   }
+  // Add "Current Year" option and select it
+  var option = document.createElement("option");
+  option.textContent = year;
+  option.selected = true;
+  yearSelect.appendChild(option);
 }
 
 // when the month or year <select> values are changed, rerun populateDays()
